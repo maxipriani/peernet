@@ -1,0 +1,12 @@
+[package]
+name = "peernet"
+edition = { workspace = true }
+
+[dependencies]
+peernet-core = { workspace = true }
+peernet-network = { workspace = true }
+tokio = { workspace = true }
+tokio-util = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+clap = { workspace = true }

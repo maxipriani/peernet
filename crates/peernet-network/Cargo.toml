@@ -1,0 +1,12 @@
+[package]
+name = "peernet-network"
+edition = { workspace = true }
+
+[dependencies]
+peernet-core = { workspace = true }
+libp2p = { workspace = true }
+tokio = { workspace = true }
+tokio-util = { workspace = true }
+tracing = { workspace = true }
+futures = { workspace = true }
+derive_more = { workspace = true }

@@ -1,0 +1,8 @@
+[package]
+name = "peernet-core"
+edition = { workspace = true }
+
+[dependencies]
+thiserror = { workspace = true }
+derive_more = { workspace = true }
+libp2p = { workspace = true }

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      .s { stroke:#39FF14; stroke-width:10; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .t { stroke:#39FF14; stroke-width:6;  fill:none; stroke-linecap:round; stroke-linejoin:round; opacity:.9; }
+      .n { fill:#39FF14; }
+      .nhalo { fill:none; stroke:#39FF14; stroke-width:6; opacity:.55; }
+    </style>
+  </defs>
+
+  <g filter="url(#glow)">
+    <g class="t">
+      <path d="M256 56 L397 115 L456 256 L397 397 L256 456 L115 397 L56 256 L115 115 Z"/>
+      <path d="M256 56 L456 256 L256 456 L56 256 Z"/>
+      <path d="M115 115 L397 115 L397 397 L115 397 Z"/>
+      <path d="M256 56 L256 160"/>
+      <path d="M397 115 L342 170"/>
+      <path d="M456 256 L352 256"/>
+      <path d="M397 397 L342 342"/>
+      <path d="M256 456 L256 352"/>
+      <path d="M115 397 L170 342"/>
+      <path d="M56 256  L160 256"/>
+      <path d="M115 115 L170 170"/>
+    </g>
+
+    <g>
+      <circle class="n" cx="256" cy="56"  r="10"/><circle class="nhalo" cx="256" cy="56"  r="18"/>
+      <circle class="n" cx="397" cy="115" r="10"/><circle class="nhalo" cx="397" cy="115" r="18"/>
+      <circle class="n" cx="456" cy="256" r="10"/><circle class="nhalo" cx="456" cy="256" r="18"/>
+      <circle class="n" cx="397" cy="397" r="10"/><circle class="nhalo" cx="397" cy="397" r="18"/>
+      <circle class="n" cx="256" cy="456" r="10"/><circle class="nhalo" cx="256" cy="456" r="18"/>
+      <circle class="n" cx="115" cy="397" r="10"/><circle class="nhalo" cx="115" cy="397" r="18"/>
+      <circle class="n" cx="56"  cy="256" r="10"/><circle class="nhalo" cx="56"  cy="256" r="18"/>
+      <circle class="n" cx="115" cy="115" r="10"/><circle class="nhalo" cx="115" cy="115" r="18"/>
+    </g>
+
+    <g>
+      <circle class="s" cx="256" cy="256" r="120"/>
+      <ellipse class="t" cx="256" cy="256" rx="60" ry="120"/>
+      <ellipse class="t" cx="256" cy="256" rx="100" ry="120" opacity=".55"/>
+      <ellipse class="t" cx="256" cy="256" rx="120" ry="60"/>
+      <ellipse class="t" cx="256" cy="256" rx="120" ry="95" opacity=".55"/>
+      <path class="t" d="M256 136 V376" opacity=".45"/>
+      <path class="t" d="M136 256 H376" opacity=".45"/>
+    </g>
+  </g>
+</svg>
